@@ -2,7 +2,7 @@
 
 // Propriétés du slider
 $('.carousel').carousel({
-  interval: 3000,
+  interval: 4000,
   wrap: true
 })
 
