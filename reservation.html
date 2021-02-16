@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Grégory et Menelik">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <!-- Date range picker CSS-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+  <!-- CSS perso-->
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <title> Réservation - Hotelcop</title>
+</head>
+
+<body>
+
+
+  <!--Menu -->
+  <nav id="menu" class="row navbar navbar-expand-lg navbar-dark bg-light">
+    <a class="navbar-brand" href="index.html"><img id="logo" src="logo/logo.png" alt="logogold" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="actus.html">Actualités</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="philosophie.html">Présentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="chambre.html">Chambres</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="restaurant.html">Restaurant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="spa.html">SPA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="avis.html">Avis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="acces.html">Accès</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.html">Évènements</a>
+        </li>
+      </ul>
+
+      <span class="icon2"><a href="panier.html"><i class="fas fa-shopping-basket text-light"></i></a></span>
+      <button type="button" class="btn btn-link langue col-xs-12"><img src="images/fr.png"
+          alt="version française"></button>
+      <button type="button" class="btn btn-link langue col-xs-12"><img src="images/en.png"
+          alt="version anglaise"></button>
+      <a class="btn btn-primary col-xs-12" href="#" role="button" id="book">Reservation</a>
+
+      <form class="form-inline my-2 my-lg-0 d-none d-sm-block">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Rechercher">
+          <div class="input-group-append">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </nav>
+  <!--Menu FIN-->
+
+  <div class="container">
+    <div class="row">
+      <!-- Formulaire de reservation -->
+      <div class="col-xl-4 col-md-5 col-12">
+        <form id="booking_form">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label id="inputStarting_date">ARRIVÉE</label>
+              <input type="text" class="form-control" id="Starting_date" placeholder="ARRIVÉE">
+            </div>
+            <div class="form-group col-md-6">
+              <label id="inputEnding_date">DÉPART</label>
+              <input type="text" class="form-control" id="Ending_date" placeholder="DÉPART">
+            </div>
+          </div>
+
+          <div class="form-row my-2">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="flexible_dates_Check">
+              <label class="form-check-label" for="flexible_dates_Check">
+                Dates flexibles
+              </label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group  col-md-6 my-1">
+              <label class="mr-sm-2" for="nbrAdultes">Adultes</label>
+              <select class="custom-select mr-sm-2" id="nbrAdultes">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+
+            <div class="form-group col-md-6 my-1">
+              <label class="mr-sm-2" for="nbrEnfants">Enfants</label>
+              <select class="custom-select mr-sm-2" id="nbrEnfants">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="form-group row my-3">
+            <div class="offset-1 col-10">
+              <button type="submit" class="btn btn-primary" id="dispo">Rechercher des disponibilités</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- FIN Formulaire de reservation-->
+
+      <div class="col-xl-8 col-md-7 col-12">
+
+        <!--contenu-->
+
+        <div class="row my-3">
+          <blockquote class="col-12 blockquote text-center">
+            <h4 class="mb-0">Réserver votre chambre</h4>
+          </blockquote>
+        </div>
+
+        <div class="carte-reservation">
+          <div class="carte_background row">
+            <div class="col-md-4 col-xs-12 carte_text">
+              <h3 class="italic gold">Chambre classique</h3>
+              Confort, calme et lumière naturelle.
+              <br />
+              Votre chambre Classique vous détend avec élégance et salle de bain équipée de vasque en marbre. Noblesse
+              tissée de beaux matériaux.
+              <br> <br>
+              <b>Tarifs à partir de 390.00 € par nuit</b> <br> <br>
+              <a href="chambre.html#classique" class="gold">Réserver une chambre</a>
+            </div>
+            <div class="col-md-7 col-xs-12 carte_pic">
+              <img src="images/chambre/room_classique.jpg" class="img-fluid" alt="classique">
+            </div>
+          </div>
+        </div>
+
+        <div class="carte-reservation">
+          <div class="carte_background row">
+            <div class="col-md-7 col-xs-12 carte_pic_inv">
+              <img src="images/chambre/confort_room.jpg" class="img-fluid" alt="confort">
+            </div>
+
+            <div class="col-md-4 col-xs-12 carte_text_inv">
+              <h3 class="italic gold">Chambre Confort</h3>
+              Larges fenêtres insonorisées, avec balcon sur l’avenue de Montaigne. Votre chambre Confort est une
+              invitation au voyage… entre livres, parfums raffinés et œuvres d’art.
+              <br>
+              <br>
+              <b>Tarifs à partir de 545.00 € par nuit</b> <br> <br>
+              <a href="chambre.html#confort" class="gold">Réserver une chambre</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carte-reservation">
+          <div class="carte_background row">
+            <div class="col-md-4 col-xs-12 carte_text">
+              <h3 class="italic gold">Chambre Deluxe</h3>
+              Le confort d’une salle de bain avec double vasque et WC séparés pour certaines. Vue sur l’avenue de
+              Montaigne pour d’autres. Votre chambre Deluxe vous reçoit avec art et lumière naturelle.
+              <br>
+              <br>
+              <b>Tarifs à partir de 645.00 € par nuit</b> <br>
+              <br>
+              <a href="chambre.html#deluxe" class="gold">Réserver une chambre</a>
+            </div>
+            <div class="col-md-7 col-xs-12 carte_pic">
+              <img src="images/chambre/room_deluxe.jpg" class="img-fluid" alt="deluxe">
+            </div>
+          </div>
+        </div>
+        <div class="carte-reservation">
+          <div class="carte_background row">
+            <div class="col-md-7 col-xs-12 carte_pic_inv">
+              <img src="images/chambre/suite.jpg" class="img-fluid" alt="suite">
+            </div>
+
+
+
+            <div class="col-md-4 col-xs-12 carte_text_inv">
+              <h3 class="italic gold">Suite</h3>
+              Votre Suite offre un confort moderne paré de mobilier sur-mesure et de pièces d’art. Salon séparé de la
+              chambre par des portes miroirs coulissantes. Extension d’un troisième lit sur demande ou d’un lien avec la
+              Suite Deluxe.
+              <br />
+              <br />
+              <b>Tarifs à partir de 845.00 par nuitée</b> <br> <br>
+              <a href="chambre.html#suite" class="gold">Réserver une chambre</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="scrollUp">
+    <a href="#top"><img src="images/bouton_retour.png" alt="retour accueil" /></a>
+  </div>
+
+
+  <!--contenu fin-->
+
+  <!--FOOTER-->
+  <div id="footer" class="row">
+    <div class="col-md-3 col-xs-12">
+      <a id="logo_footer" href="index.html"><img src="logo/logo.png" alt="" /></a>
+      <br>
+      1 RUE AVENUE MONTAIGNE,75008 PARIS, FRANCE
+      <br> +33 (0)1 70 98 78 88
+      <div id="copyright"> ©Hotelcop, Paris 2020</div>
+    </div>
+    <div class="col-md-3 col-xs-12 vcenter">
+      <div id="follow_us">
+        SUIVEZ NOUS <br />
+        <br />
+        <span class="icons"><a href="https://fr-fr.facebook.com/HotelMarignan" target="_blank"><i
+              class="fab fa-facebook-f"></i></a></span>
+        <span class="icons"><a href="https://www.instagram.com/hotels.barriere/?hl=fr" target="_blank"><i
+              class="fab fa-instagram"></i></a></span>
+        <span class="icons"><a href="https://twitter.com/ghpalaisroyal?lang=fr" target="_blank"> <i
+              class="fab fa-twitter"></i></a></span>
+        <span class="icons"><a href="https://www.youtube.com/hilton" target="_blank"> <i
+              class="fab fa-youtube"></i></a></span>
+      </div>
+    </div>
+    <div class="col-md-3 col-xs-12 vcenter">
+      <div id="newsletter">
+        NEWSLETTER<br><br>
+        <form action="nl.html">
+          <div class="input-group flex-nowrap">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="addon-wrapping">@</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Saisissez votre email" aria-label="Email"
+              aria-describedby="addon-wrapping">
+            <a class="btn btn-primary col-xs-12" href="nl.html" role="button" id="valide">OK</a>
+          </div>
+        </form>
+        <p class="text2_inscription_footer">En cliquant sur "OK", vous acceptez de recevoir
+          des informations sur les nouvelles, les événements, les promotions et les services de l'hôtel.</p>
+      </div>
+    </div>
+    <div class="col-md-3 col-xs-12 vcenter">
+      <div id="footer_rest">
+        <div class="row">
+          <a href="contact.html" class="col-md-12 col-lg-6 footer_end">CONTACTEZ-NOUS</a>
+          <a href="recrutement.html" class="col-md-12 col-lg-6 footer_end">RECRUTEMENT</a>
+        </div>
+        <hr>
+        <div class="row">
+          <a href="presse.html" class="col-md-12 col-lg-6 footer_end">PRESSE</a>
+          <a href="mentionslegales.html" class="col-md-12 col-lg-6 footer_end">MENTIONS LEGALES</a>
+        </div>
+        <hr>
+        <div class="row">
+          <a href="CGV.html" class="col-xs-6 col-md-12 col-lg-6 footer_end">CGV</a>
+          <a href="sitemap.html" class="col-md-12 col-lg-6 footer_end">PLAN DU SITE</a> <br>
+          <a href="#" class="col-xs-6 col-md-12 col-lg-6 footer_end vcenter"
+            onclick="window.print(); return false;">Imprimer la page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--FOOTER FIN-->
+
+
+  <form action="reservation.html" method="get" id="send_dates">
+    <input type="hidden" name="starting_date" id="starting_date">
+    <input type="hidden" name="ending_date" id="ending_date">
+  </form>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script>
+
+  <!-- Liens JS pour le calendrier (Datarangepicker) -->
+  <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>

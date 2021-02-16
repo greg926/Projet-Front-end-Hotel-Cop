@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Grégory et Menelik">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <!-- Date range picker CSS-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+  <!-- CSS perso-->
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <title> Avis - HotelCop</title>
+</head>
+
+<body>
+
+
+  <!--Menu -->
+  <nav id="menu" class="row navbar navbar-expand-lg navbar-dark bg-light">
+    <a class="navbar-brand" href="index.html"><img id="logo" src="logo/logo.png" alt="logogold" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="actus.html">Actualités</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="presentation.html">Présentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="chambre.html">Chambres</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="restaurant.html">Restaurant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="spa.html">SPA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="avis.html">Avis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="acces.html">Accès</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.html">Évènements</a>
+        </li>
+      </ul>
+
+      <span class="icon2"><a href="panier.html"><i class="fas fa-shopping-basket text-light"></i></a></span>
+      <button type="button" class="btn btn-link langue col-xs-12"><img src="images/fr.png"
+          alt="version française"></button>
+      <button type="button" class="btn btn-link langue col-xs-12"><img src="images/en.png"
+          alt="version anglaise"></button>
+      <a class="btn btn-primary col-xs-12" href="#" role="button" id="book">Reservation</a>
+
+      <form class="form-inline my-2 my-lg-0 d-none d-sm-block">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Rechercher">
+          <div class="input-group-append">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </nav>
+  <!--Menu FIN-->
+
+  <div class="container">
+    <div class="col-12 justify-content-center">
+      <br>
+      <div class="row">
+        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+            <div class="row">
+              <i class="fas fa-star text-success"></i><i class="fas fa-star text-success"></i><i
+                class="fas fa-star text-success"></i><i class="fas fa-star text-success"></i><i
+                class="fas fa-star text-success"></i>
+            </div>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">Une belle rencontre, devenus iconique</a>
+            </h3>
+            <div class="mb-1 text-muted">04/02/2020</div>
+            <p class="card-text mb-auto"> Nous sommes mon mari et moi de grands habitués de ce lieu, qui est toujours
+              magique !!!
+              C'est un hôtel unique en son genre, le personnel y est merveilleux, souriant, à votre service et d'une
+              efficacité réconfortante, qui nous permet de nous évader dans la magie de Paris.
+            </p>
+            <a href="#">Voir plus</a>
+          </div>
+          <img src="images/johndoe.jpg" class="img-fluid" alt="johndoe">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+            <div class="row">
+              <i class="fas fa-star text-success"></i><i class="fas fa-star text-success"></i><i
+                class="fas fa-star text-success"></i><i class="fas fa-star text-success"></i><i
+                class="fas fa-star text-success"></i>
+            </div>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">Super Week-end Romantique</a>
+            </h3>
+            <div class="mb-1 text-muted">25/01/2020</div>
+            <p class="card-text mb-auto">Nous avons découvert l'histoire de cet établissement y arrivant sur place.
+              Accueil chaleureux er souriant.
+              Des couloirs pour accéder aux chambres d'une longueur jamais vu , avec vue depuis le couloir, sur le Parc
+              des
+              Princes et de la Tour Eiffel</p>
+            <a href="#">Voir plus</a>
+          </div>
+          <img src="images/johndoe.jpg" class="img-fluid" alt="johndoe">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+            <div class="row">
+              <i class="fas fa-star text-success"></i><i class="fas fa-star text-success"></i><i
+                class="fas fa-star text-success"></i><i class="fas fa-star text-success"></i><i
+                class="fas fa-star text-success"></i>
+            </div>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">Un lieu d’exception !</a>
+            </h3>
+            <div class="mb-1 text-muted">10/01/2020</div>
+            <p class="card-text mb-auto">Comme toujours nous sommes très bien reçus dans cet hôtel situé dans le 8e
+              arr.
+              de paris.
+              De la réception à la conciergerie,la gentillesse et l’envie de faire plaisir sont au rendez vous... </p>
+            <a href="#">Voir plus</a>
+          </div>
+          <img src="images/johndoe.jpg" class="img-fluid" alt="johndoe">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+            <div class="row">
+              <i class="fas fa-star text-success"></i><i class="fas fa-star text-success"></i><i
+                class="fas fa-star text-success"></i><i class="fas fa-star text-success"></i><i
+                class="fas fa-star text-success"></i>
+            </div>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">Inoubliable !</a>
+            </h3>
+            <div class="mb-1 text-muted">01/01/20</div>
+            <p class="card-text mb-auto">Une seule nuit en chambre classique mais inoubliable:
+              vue imprenable sur les magnifiques vue de Paris, un confort extraordinaire, modernité et esprit art deco
+              et urbain sont au rendez-vous...</p>
+            <a href="#">Voir plus</a>
+          </div>
+          <img src="images/johndoe.jpg" class="img-fluid" alt="johndoe">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+            <div class="row">
+              <i class="fas fa-star text-success"></i><i class="fas fa-star text-success"></i><i
+                class="fas fa-star text-success"></i><i class="fas fa-star text-success"></i><i
+                class="far fa-star text-success"></i>
+            </div>
+            <h3 class="mb-0">
+              <a class="text-dark" href="#">Un réveillon Noël magique</a>
+            </h3>
+            <div class="mb-1 text-muted">25/12/19</div>
+            <p class="card-text mb-auto"> Un hôtel sous le signe de Noël, avec des décorations et un sapin dans le hall
+              magnique.
+              Un restaurant divin, avec un menu divin et chaleureux, verre de vin chaud à la cannelle, crêpe au grand
+              marnier façon HotelCop, l'ensemble du personnel était parfait pour cet événement, bravo à tous !!!.</p>
+            <a href="#">Voir plus</a>
+          </div>
+          <img src="images/johndoe.jpg" class="img-fluid" alt="johndoe">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--FOOTER-->
+  <div id="footer" class="row">
+    <div class="col-md-3 col-xs-12">
+      <a id="logo_footer" href="index.html"><img src="logo/logo.png" alt="" /></a>
+      <br>
+      1 RUE AVENUE MONTAIGNE,75008 PARIS, FRANCE
+      <br> +33 (0)1 70 98 78 88
+      <div id="copyright"> ©Hotelcop, Paris 2020</div>
+    </div>
+    <div class="col-md-3 col-xs-12 vcenter">
+      <div id="follow_us">
+        SUIVEZ NOUS <br />
+        <br />
+        <span class="icons"><a href="https://fr-fr.facebook.com/HotelMarignan" target="_blank"><i
+              class="fab fa-facebook-f"></i></a></span>
+        <span class="icons"><a href="https://www.instagram.com/hotels.barriere/?hl=fr" target="_blank"><i
+              class="fab fa-instagram"></i></a></span>
+        <span class="icons"><a href="https://twitter.com/ghpalaisroyal?lang=fr" target="_blank"> <i
+              class="fab fa-twitter"></i></a></span>
+        <span class="icons"><a href="https://www.youtube.com/hilton" target="_blank"> <i
+              class="fab fa-youtube"></i></a></span>
+      </div>
+    </div>
+    <div class="col-md-3 col-xs-12 vcenter">
+      <div id="newsletter">
+        NEWSLETTER<br><br>
+        <form action="nl.html">
+          <div class="input-group flex-nowrap">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="addon-wrapping">@</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Saisissez votre email" aria-label="Email"
+              aria-describedby="addon-wrapping">
+            <a class="btn btn-primary col-xs-12" href="nl.html" role="button" id="valide">OK</a>
+          </div>
+        </form>
+        <p class="text2_inscription_footer">En cliquant sur "OK", vous acceptez de recevoir
+          des informations sur les nouvelles, les événements, les promotions et les services de l'hôtel.</p>
+      </div>
+    </div>
+    <div class="col-md-3 col-xs-12 vcenter">
+      <div id="footer_rest">
+        <div class="row">
+          <a href="contact.html" class="col-md-12 col-lg-6 footer_end">CONTACTEZ-NOUS</a>
+          <a href="recrutement.html" class="col-md-12 col-lg-6 footer_end">RECRUTEMENT</a>
+        </div>
+        <hr>
+        <div class="row">
+          <a href="presse.html" class="col-md-12 col-lg-6 footer_end">PRESSE</a>
+          <a href="mentionslegales.html" class="col-md-12 col-lg-6 footer_end">MENTIONS LEGALES</a>
+        </div>
+        <hr>
+        <div class="row">
+          <a href="CGV.html" class="col-xs-6 col-md-12 col-lg-6 footer_end">CGV</a>
+          <a href="sitemap.html" class="col-md-12 col-lg-6 footer_end">PLAN DU SITE</a> <br>
+          <a href="#" class="col-xs-6 col-md-12 col-lg-6 footer_end vcenter"
+            onclick="window.print(); return false;">Imprimer la page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="scrollUp">
+    <a href="#top"><img src="images/bouton_retour.png" alt="retour accueil" /></a>
+  </div>
+  <!--FOOTER FIN-->
+
+  <form action="reservation.html" method="get" id="send_dates">
+    <input type="hidden" name="starting_date" id="starting_date">
+    <input type="hidden" name="ending_date" id="ending_date">
+  </form>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script>
+
+  <!-- Liens JS pour le calendrier (Datarangepicker) -->
+  <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>

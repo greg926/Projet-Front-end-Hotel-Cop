@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name ="author" content="Grégory et Menelik">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <!-- Date range picker CSS-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+  <!-- CSS perso-->
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <title> Recrutement - Hotelcop</title>
+</head>
+
+<body>
+
+
+  <!--Menu -->
+  <nav id="menu" class="row navbar navbar-expand-lg navbar-dark bg-light">
+    <a class="navbar-brand" href="index.html"><img id="logo" src="logo/logo.png" alt="logogold" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="actus.html">Actualités</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="presentation.html">Présentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="chambre.html">Chambres</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="restaurant.html">Restaurant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="spa.html">SPA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="avis.html">Avis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="acces.html">Accès</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.html">Évènements</a>
+        </li>
+      </ul>
+
+      <span class="icon2"><a href="panier.html"><i class="fas fa-shopping-basket text-light"></i></a></span>
+      <button type="button" class="btn btn-link langue col-xs-12"><img src="images/fr.png"
+          alt="version française"></button>
+      <button type="button" class="btn btn-link langue col-xs-12"><img src="images/en.png"
+          alt="version anglaise"></button>
+      <a class="btn btn-primary col-xs-12" href="#" role="button" id="book">Reservation</a>
+
+      <form class="form-inline my-2 my-lg-0 d-none d-sm-block">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Rechercher">
+          <div class="input-group-append">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </nav>
+  <!--Menu FIN-->
+
+<div class="container">
+  <div class="container-fluid">
+	<div class="modal fade" id="recrutementModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Formulaire de recrutement</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row bg-light text-dark">
+              <div class="col-6">
+                <h3>Contact - Hotelcop</h3>
+                <p>
+                  1 avenue Montaigne
+                  <br>
+                  75008 - Paris
+                </p>
+                <p>
+                  Tél : +33 (0)1 70 98 78 88
+                </p>
+                <span id="telhotelcop">
+                  Email : <a href="mailto:contact@hotelcop.com" class="gold">contact@hotelcop.com</a>
+                </span>
+              </div>
+
+              <div class="col-6">
+                <form>
+                  <div class="form-group">
+                    <input type="text" name="nom" value="" class="form-control" id="exampleInputNom1" placeholder="Nom">
+                  </div>
+				  
+				   <div class="form-group">
+                    <input type="text" name="prenom" value="" class="form-control" id="exampleInputPrenom1" placeholder="Prénom">
+                  </div>
+				  
+				  <div class="form-group">
+                    <input type="text" name="entreprise" value="" class="form-control" id="exampleInputPrenom2" placeholder="entreprise">
+                  </div>
+				
+                  <div class="form-group">
+                    <input type="email" name="email" value="" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                  </div>
+				  
+                  <div class="input-group">
+                    <select class="custom-select" style='width:20%; padding:0px;' id="inputGroupSelect01" name="Poste">
+                      <option selected>Poste(s) recherché(s/es)</option>
+                      <option value="maître d'hotel">Maître d'hotel</option>
+                      <option value="commis">Commis</option>
+                      <option value="concierge">Concierge</option>
+                      <option value="receptionniste">Réceptionniste</option>
+                      <option value="groom">Groom</option>
+                    </select>
+                  </div>
+				<br>
+              
+
+              <div class="col-12">
+
+                <div class="form-group">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">CV</label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Lettre de motivation</label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile2">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary send" data-dismiss="modal">Annuler</button>
+                  <button type="submit" class="btn btn-primary send" id="recrut">Envoyer</button>
+                </div>
+
+              </div>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	<br>
+    <h3><em>Hotelcop Paris recrute !</em></h3>
+
+    <p>
+      Toujours dans le respect de ses valeurs, l’hôtel prône l’excellence du service et le souci du détail.
+      Les équipes de l'Hotelcop Paris ont à cœur d’offrir à nos clients une expérience unique et emplie d’émotions.
+      Nous recherchons chaque jour des professionnels passionnés par nos métiers.
+    </p>
+
+    <p>Rejoignez-nous.</p>
+    <a class="btn btn-primary send" href="#" role="button" data-toggle="modal" data-target="#recrutementModal" id="recrut1">Formulaire
+      de recrutement</a>
+
+  </div>
+ <br>
+</div>
+<!--contenu fin-->
+  </div>
+
+ <!--FOOTER-->
+ <div id="footer" class="row">
+  <div class="col-md-3 col-xs-12">
+    <a id="logo_footer" href="index.html"><img src="logo/logo.png" alt="" /></a>
+    <br>
+    1 RUE AVENUE MONTAIGNE,75008 PARIS, FRANCE
+    <br> +33 (0)1 70 98 78 88
+    <div id="copyright"> ©Hotelcop, Paris 2020</div>
+  </div>
+  <div class="col-md-3 col-xs-12 vcenter">
+    <div id="follow_us">
+      SUIVEZ NOUS <br />
+      <br />
+      <span class="icons"><a href="https://fr-fr.facebook.com/HotelMarignan" target="_blank"><i
+            class="fab fa-facebook-f"></i></a></span>
+      <span class="icons"><a href="https://www.instagram.com/hotels.barriere/?hl=fr" target="_blank"><i
+            class="fab fa-instagram"></i></a></span>
+      <span class="icons"><a href="https://twitter.com/ghpalaisroyal?lang=fr" target="_blank"> <i
+            class="fab fa-twitter"></i></a></span>
+      <span class="icons"><a href="https://www.youtube.com/hilton" target="_blank"> <i
+            class="fab fa-youtube"></i></a></span>
+    </div>
+  </div>
+  <div class="col-md-3 col-xs-12 vcenter">
+    <div id="newsletter">
+      NEWSLETTER<br><br>
+      <form action="nl.html">
+        <div class="input-group flex-nowrap">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="addon-wrapping">@</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Saisissez votre email" aria-label="Email"
+            aria-describedby="addon-wrapping">
+            <a class="btn btn-primary col-xs-12" href="nl.html" role="button" id="valide">OK</a>
+        </div>
+      </form>
+      <p class="text2_inscription_footer">En cliquant sur "OK", vous acceptez de recevoir
+        des informations sur les nouvelles, les événements, les promotions et les services de l'hôtel.</p>
+    </div>
+  </div>
+  <div class="col-md-3 col-xs-12 vcenter">
+    <div id="footer_rest">
+      <div class="row">
+        <a href="contact.html" class="col-md-12 col-lg-6 footer_end">CONTACTEZ-NOUS</a>
+        <a href="recrutement.html" class="col-md-12 col-lg-6 footer_end">RECRUTEMENT</a>
+      </div>
+      <hr>
+      <div class="row">
+        <a href="presse.html" class="col-md-12 col-lg-6 footer_end">PRESSE</a>
+        <a href="mentionslegales.html" class="col-md-12 col-lg-6 footer_end">MENTIONS LEGALES</a>
+      </div>
+      <hr>
+      <div class="row">
+        <a href="CGV.html" class="col-xs-6 col-md-12 col-lg-6 footer_end">CGV</a>
+        <a href="sitemap.html" class="col-md-12 col-lg-6 footer_end">PLAN DU SITE</a> <br>
+        <a href="#" class="col-xs-6 col-md-12 col-lg-6 footer_end vcenter"
+          onclick="window.print(); return false;">Imprimer la page</a>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script>
+
+  <!-- Liens JS pour le calendrier (Datarangepicker) -->
+  <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>

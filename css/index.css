@@ -1,0 +1,347 @@
+*{box-sizing: border-box;}
+
+body {
+  font-family: 'Cinzel', serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  background:rgba(255, 222, 173, 0.597);
+}
+
+.italic{
+	font-style: italic;;
+}
+
+
+#logo{
+  margin-top: -20px;
+  margin-bottom: -20px;
+  width: 60%;
+}
+
+#menu{
+  font-family: 'Roboto', sans-serif;
+  background-color: black!important;
+  height: 70px;
+  z-index: 1; 
+}
+.text2_inscription_footer{
+	font-size: 0.7rem;
+	line-height: 20px;
+}
+.tooltips{
+  position: relative;
+  cursor: help;
+}
+
+
+
+.nav-link:hover{
+  color : goldenrod !important;
+}
+
+
+.navbar-collapse{
+  background-color: black!important;
+  margin: 20px;
+  
+}
+
+#menu a{
+  color: white;
+}
+
+#slider{
+  z-index: 0;
+}
+
+#slider2{
+	z-index: 0;
+}
+
+#intitule:hover{
+	color : goldenrond;
+}
+
+
+.carte{
+  height: 650px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.carte2{
+  height: 500px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.carte-reservation{
+  height: 520px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.carte_background{
+  background-color:  #f7f8f8;
+  z-index: 1;
+  height: 400px;
+  width: 100%;
+}
+
+.carte_text{
+  margin-left: 7%;
+  margin-top: 6%;
+  background-color: white;
+  padding: 20px;
+  padding-top: 30px;
+  font-size: 80%;
+}
+
+.carte_pic{
+  margin-top: 6%;
+}
+
+
+.carte_text_inv{
+  margin-top: 6%;
+  background-color: white;
+  padding: 20px;
+  padding-top: 30px;
+  font-size: 80%;
+}
+
+.carte_pic_inv{
+  margin-left: 7%;
+  margin-top: 6%;
+}
+
+#book, #dispo, #send, #recrut, #recrut1, #valide {
+  margin-right: 10px;
+  background-color: goldenrod;
+  color: white;
+  border-color: goldenrod;
+}
+
+#book:hover, #dispo:hover, #send:hover, #recrut:hover, #recrut1:hover, #valide:hover{
+  margin-right: 10px;
+  background-color: white;
+  color: goldenrod;
+}
+
+.in-range{
+  background-color: #f6e5b7 !important;
+}
+
+.start-date, .end-date, .applyBtn{
+  background-color: goldenrod !important;
+  border-color: goldenrod !important;
+}
+
+.slider-subtitle{
+  margin-bottom: 30%;
+}
+
+.langue{
+  color: white;
+  margin-right: 10px;
+}
+
+.langue:hover{
+  color: white;
+  background-color: goldenrod;
+}
+
+
+.vcenter{
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+#footer{
+  background-color: black!important;
+  color: white;
+  text-align: center;
+  font-size: 90%;
+  font-variant: small-caps;
+  padding-bottom: 50px;
+}
+#footer_rest{
+  margin-top: 60px;
+}
+
+
+hr{
+  border-color: white;
+}
+
+#footer a{
+  color: white;
+}
+
+#follow_us{
+  height: 100px;
+}
+
+#newsletter{
+  height: 100px;
+}
+
+#copyright{
+  margin-top: 20px;
+}
+
+#logo_footer{
+    margin-right: 10px;
+}
+
+#scrollUp{
+position: fixed;
+bottom : 10px;
+right: -100px;
+opacity: 0.5;
+}
+
+.icons{
+  font-size: 200%;
+  margin: auto;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.icon2{
+  font-size: 90%;
+  margin: auto;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+#values_title{
+  padding-top: 50%;
+  color: goldenrod;
+  margin-left: 18%
+
+}
+
+#values_subtitle{
+  text-align: center;
+  color: white;
+}
+
+#footer_block{
+  background-color: white;
+  height : 220px;
+  color: grey;
+  margin-top: 150px;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.footer_title{
+  font-variant: small-caps;
+}
+
+#social{
+  color: grey;
+}
+
+.footer_end{
+  color: grey;
+}
+
+.footer_end:hover{
+  color: goldenrod;
+}
+
+.menu{
+	color : goldenrod;
+	font-size : 18px;
+}
+
+.menu:hover{
+	color : goldenrod;
+}
+
+.icons:hover{
+	text-decoration: none;
+	color : goldenrod!important;
+	
+}
+
+.presse{
+	background:rgba(255, 222, 173, 0.597);
+    text-align: center;
+}
+.presse .intro {
+	font-size: 1.6666666667rem;
+	margin-bottom: 29px;
+}
+
+
+#submitMail{
+  margin-left: 10px;
+}
+
+#submitMail:hover{
+  margin-left: 10px;
+  color: black;
+  background-color: goldenrod;
+}
+
+#booking_form{
+  margin: 50px auto;
+  padding: 10px;
+  background-color: #f6f6f6;
+  width: 80%;
+  
+}
+
+.gold {
+    color : goldenrod !important;
+}
+.black{
+	color : black !important;
+}
+	
+.card-title{
+	 color : goldenrod !important;
+	 text-decoration: none !important;
+}
+
+.card-title:hover{
+	 color : goldenrod!important;
+	 text-decoration: none !important;
+}
+
+.active{
+	color:goldenrod!important;
+	
+}
+
+
+
+ .img-rounded{
+  display: block;
+  margin: 0 auto;
+  height: 150px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+ }
+
+ @media only screen and (max-width: 900px) {
+  .navbar-collapse{
+    padding: 20px;
+  }
+  
+}
+
+@media only screen and (min-width: 995px) {
+  #footer{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+}

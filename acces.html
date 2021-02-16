@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Grégory et Menelik">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <!-- Date range picker CSS-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+  <!-- CSS perso-->
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <title> Accès - HotelCop</title>
+</head>
+
+<body>
+
+  <!--Menu -->
+  <nav id="menu" class="row navbar navbar-expand-lg navbar-dark bg-light">
+    <a class="navbar-brand" href="index.html"><img id="logo" src="logo/logo.png" alt="logogold" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="actus.html">Actualités</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="presentation.html">Présentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="chambre.html">Chambres</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="restaurant.html">Restaurant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="spa.html">SPA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="avis.html">Avis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="acces.html">Accès</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.html">Évènements</a>
+        </li>
+      </ul>
+
+      <span class="icon2"><a href="panier.html"><i class="fas fa-shopping-basket text-light"></i></a></span>
+      <button type="button" class="btn btn-link langue col-xs-12"><img src="images/fr.png"
+          alt="version française"></button>
+      <button type="button" class="btn btn-link langue col-xs-12"><img src="images/en.png"
+          alt="version anglaise"></button>
+      <a class="btn btn-primary col-xs-12" href="#" role="button" id="book">Reservation</a>
+
+      <form class="form-inline my-2 my-lg-0 d-none d-sm-block">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Rechercher">
+          <div class="input-group-append">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </nav>
+  <br>
+  <!--Menu FIN-->
+
+
+  <div class="container">
+    <!-- GOOGLE MAP -->
+    <div class="container-fluid p-0">
+      <div class="col-12">
+        <div class="row bg-light">
+          <div class="col-md-4 col-xs-12">
+            <h3><br>Accès à notre hotel</h3> <br>
+            <p>
+              Adresse : 1 avenue Montaigne <br>
+              75008 Paris
+            </p>
+            Transports à proximité : <br> <br>
+            <i class="fas fa-subway"> Métro Ligne 9 : </i> Station : Alma-Marceau <br>
+            <i class="fas fa-subway"> RER C - Station : </i> Gare du pont de l'Alma
+          </div>
+          <div class="col-md-8 col-xs-12">
+            <br>
+            <iframe class="col-12"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.6401922469718!2d2.299889715245805!3d48.865071179288115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdd0dd39a4d%3A0x508194b82b12f012!2s1+Avenue+Montaigne%2C+75008+Paris!5e0!3m2!1sfr!2sfr!4v1547546636971"
+               height="600" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- GOOGLE MAP -->
+
+  </div>
+  <br>
+
+
+  <!--FOOTER-->
+  <div id="footer" class="row">
+    <div class="col-md-3 col-xs-12">
+      <a id="logo_footer" href="index.html"><img src="logo/logo.png" alt="" /></a>
+      <br>
+      1 RUE AVENUE MONTAIGNE,75008 PARIS, FRANCE
+      <br> +33 (0)1 70 98 78 88
+      <div id="copyright"> ©Hotelcop, Paris 2020</div>
+    </div>
+    <div class="col-md-3 col-xs-12 vcenter">
+      <div id="follow_us">
+        SUIVEZ NOUS <br />
+        <br />
+        <span class="icons"><a href="https://fr-fr.facebook.com/HotelMarignan" target="_blank"><i
+              class="fab fa-facebook-f"></i></a></span>
+        <span class="icons"><a href="https://www.instagram.com/hotels.barriere/?hl=fr" target="_blank"><i
+              class="fab fa-instagram"></i></a></span>
+        <span class="icons"><a href="https://twitter.com/ghpalaisroyal?lang=fr" target="_blank"> <i
+              class="fab fa-twitter"></i></a></span>
+        <span class="icons"><a href="https://www.youtube.com/hilton" target="_blank"> <i
+              class="fab fa-youtube"></i></a></span>
+      </div>
+    </div>
+    <div class="col-md-3 col-xs-12 vcenter">
+      <div id="newsletter">
+        NEWSLETTER<br><br>
+        <form action="nl.html">
+          <div class="input-group flex-nowrap">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="addon-wrapping">@</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Saisissez votre email" aria-label="Email"
+              aria-describedby="addon-wrapping">
+            <a class="btn btn-primary col-xs-12" href="nl.html" role="button" id="valide">OK</a>
+          </div>
+        </form>
+        <p class="text2_inscription_footer">En cliquant sur "OK", vous acceptez de recevoir
+          des informations sur les nouvelles, les événements, les promotions et les services de l'hôtel.</p>
+      </div>
+    </div>
+    <div class="col-md-3 col-xs-12 vcenter">
+      <div id="footer_rest">
+        <div class="row">
+          <a href="contact.html" class="col-md-12 col-lg-6 footer_end">CONTACTEZ-NOUS</a>
+          <a href="recrutement.html" class="col-md-12 col-lg-6 footer_end">RECRUTEMENT</a>
+        </div>
+        <hr>
+        <div class="row">
+          <a href="presse.html" class="col-md-12 col-lg-6 footer_end">PRESSE</a>
+          <a href="mentionslegales.html" class="col-md-12 col-lg-6 footer_end">MENTIONS LEGALES</a>
+        </div>
+        <hr>
+        <div class="row">
+          <a href="CGV.html" class="col-xs-6 col-md-12 col-lg-6 footer_end">CGV</a>
+          <a href="sitemap.html" class="col-md-12 col-lg-6 footer_end">PLAN DU SITE</a> <br>
+          <a href="#" class="col-xs-6 col-md-12 col-lg-6 footer_end vcenter"
+            onclick="window.print(); return false;">Imprimer la page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--FOOTER FIN-->
+
+  <form action="reservation.html" method="get" id="send_dates">
+    <input type="hidden" name="starting_date" id="starting_date">
+    <input type="hidden" name="ending_date" id="ending_date">
+  </form>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script>
+
+  <!-- Liens JS pour le calendrier (Datarangepicker) -->
+  <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>

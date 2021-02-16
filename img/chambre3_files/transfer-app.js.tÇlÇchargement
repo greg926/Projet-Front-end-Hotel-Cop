@@ -1,0 +1,8 @@
+ $('.ht-tab-header__trigger').on('click', function() {
+    $('.ht-tab').toggleClass('revealed');
+    $('.ht-tab-header').toggleClass('revealed');
+    $('.ht-tab-header__heading').toggleClass('revealed');
+    $('.ht-tab-header__icon').toggleClass('revealed');
+    $('.ht-tab-header__close').toggleClass('revealed');
+    $('.ht-tab-body').toggleClass('revealed');
+});
